@@ -15,7 +15,9 @@ body {
 header {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
   top: 0;
   left: 0;
   height: 50px;
@@ -79,7 +81,7 @@ header .menu li a {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  top: 44%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
@@ -95,6 +97,7 @@ header .menu li a {
   text-align: center;
   line-height: 3rem;
   letter-spacing: 2px;
+  padding-bottom: 3rem;
   text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
 }
 
