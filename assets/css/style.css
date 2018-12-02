@@ -17,7 +17,7 @@ header {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
   top: 0;
   left: 0;
   height: 50px;
@@ -83,6 +83,7 @@ header .menu li a {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
+  z-index: -1;
 }
 
 .welcome-text .comment {
