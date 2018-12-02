@@ -10,6 +10,8 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  padding-top: max(10px, env(safe-area-inset-top));
+  padding-bottom: max(10px, env(safe-area-inset-bottom));
 }
 
 header {
@@ -84,7 +86,7 @@ header .menu li a {
   top: 50%;
   transform: translateY(-50%);
   z-index: -1; */
-  position: fixed;
+  position: absolute;
   transform: translateY(50%);
   z-index: -1;
   bottom: 50%;
