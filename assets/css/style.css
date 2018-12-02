@@ -8,6 +8,7 @@ body {
   font-family: "Nunito", sans-serif;
   background-color: lightblue;
   height: 100vh;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -80,7 +81,6 @@ header .menu li a {
   position: relative;
   top: 44%;
   transform: translateY(-50%);
-  height: 60%;
 }
 
 .welcome-text .comment {
