@@ -6,7 +6,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: blueviolet;
+  background-color: lightblue;
   height: 100vh;
   overflow: hidden;
 }
@@ -40,6 +40,7 @@ header .menu-toggle {
   position: relative;
   padding-right: 10px;
   font-size: 2rem;
+  color: orange;
 }
 
 header .menu {
@@ -69,24 +70,57 @@ header .menu li {
 header .menu li a {
   text-decoration: none;
   color: orange;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   top: 44%;
   transform: translateY(-50%);
+  height: 60%;
+}
+
+.welcome-text .comment {
+  align-self: center;
 }
 
 .welcome-text h1 {
-  font-family: "Anton";
+  /* font-family: "Anton"; */
   color: #fff;
-  font-size: 3rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
-  line-height: 4rem;
+  line-height: 3rem;
   letter-spacing: 2px;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text p {
+  position: relative;
+  width: 230px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-text p.name {
+  padding-top: 20px;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.welcome-text p.name::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 2px;
+  width: 70%;
+  top: 10px;
+  border-bottom: 1px solid orange;
 }
 
 .scroll-arrow {
