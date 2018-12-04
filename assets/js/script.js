@@ -18,3 +18,14 @@ menuBar.addEventListener("click", function() {
     show = false;
   }
 });
+
+/*
+ * Scroll Event
+ */
+
+let data = document.querySelector("header");
+
+// document.addEventListener("scroll", function(e) {
+//   e.preventDefault();
+//   console.log(e);
+// });
